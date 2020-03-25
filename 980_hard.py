@@ -18,12 +18,8 @@ class Solution:
                     s_x = j
                     s_y = i
         return s_x,s_y,zero_count
-    '''Something goes wrong if enter this line'''   
         
     def find_path(self, grid, x, y, count):
-        
-        '''print ("at" + str(x) + str(y))'''
-        
         
         grid[y][x] = -1
         
@@ -70,11 +66,7 @@ class Solution:
         self.max_x += 2
         self.max_y += 2
         
-        '''print (grid)'''
-        
         s_x, s_y, self.zero_count = self.get_info(grid)
-        
-        
         
         self.find_path(grid, s_x, s_y, 0)
         return self.path_count
