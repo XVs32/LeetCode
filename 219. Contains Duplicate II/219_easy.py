@@ -5,12 +5,12 @@ class Solution:
         
         for i in range(len(nums)):
             
-            if not table.__contains__(str(nums[i])):
-                table[str(nums[i])] = i;
-            elif i - table[str(nums[i])] <= k:
+            if not table.__contains__(nums[i]):
+                table[nums[i]] = i;
+            elif i - table[nums[i]] <= k:
                 return True
             else :
-                table[str(nums[i])] = i;
+                table[nums[i]] = i;
 
         return False
 	
