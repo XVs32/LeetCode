@@ -19,8 +19,6 @@ class Solution:
             else:
                 ans[sort_map[sorted_string]].append(string)
                 
-                
-
         return ans
         
 a = Solution()
