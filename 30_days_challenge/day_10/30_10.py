@@ -1,22 +1,30 @@
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class MinStack:
+    
+    a = []
+    
+    def __init__(self):
+        self.a = []
+        return None
+        
+    def push(self, x: int) -> None:
+        self.a.append(x)
+        return None
 
-class Solution:
-    def diameterOfBinaryTree(self, root):
-        long = 0
-        short = 0
-        count = len(root)
-        level = 0
-        while count != 0:
-            level += 1
-            
-            if count % 2 != 0:
-                short = long
-                long = level 
-            
-        return long + short - 1
+    def pop(self) -> None:
+        self.a.pop()
+        return None
+
+    def top(self) -> int:
+        return self.a[-1]
+
+    def getMin(self) -> int:
+        return min(self.a)
+
+
+# Your MinStack object will be instantiated and called as such:
+# obj = MinStack()
+# obj.push(x)
+# obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.getMin()
         
