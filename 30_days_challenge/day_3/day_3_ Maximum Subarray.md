@@ -1,4 +1,4 @@
-# day_3: Maximum Subarray
+# day_03: Maximum Subarray
 
 ###### tags: `online_judge`, `python3`
 
