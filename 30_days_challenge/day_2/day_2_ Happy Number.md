@@ -1,4 +1,4 @@
-# day_2: Happy Number
+# day_02: Happy Number
 
 ###### tags: `online_judge`, `python3`
 
