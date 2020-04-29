@@ -1,4 +1,4 @@
-# day_1: Single Number
+# day_01: Single Number
 
 ###### tags: `online_judge`, `python3`
 
