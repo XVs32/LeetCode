@@ -1,4 +1,4 @@
-# day_4: Move Zeroes
+# day_04:Move Zeroes
 
 ###### tags: `online_judge`, `python3`
 
